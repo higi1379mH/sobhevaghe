@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="معرفی کتاب صبح واقعه؛ اثر ابراهیم حسن‌بیگی درباره شهید محسن حججی">
+<title>صبح واقعه | معرفی کتاب</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{
+  --bg:#080b16; --card:rgba(19,25,45,.78); --text:#f8f9ff; --muted:#b8bfd4;
+  --accent:#19b86b; --accent2:#65e6a1; --gold:#b7f36b; --border:rgba(255,255,255,.10);
+  --shadow:0 24px 70px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Vazirmatn",Tahoma,sans-serif;background:var(--bg);color:var(--text)}
+body{
+  background:
+    radial-gradient(circle at 15% 15%, rgba(25,184,107,.18), transparent 30%),
+    radial-gradient(circle at 85% 85%, rgba(101,230,161,.12), transparent 28%),
+    linear-gradient(145deg,#06110d,#0b2118 55%,#06110d);
+  overflow-x:hidden;
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(rgba(255,255,255,.18) .7px,transparent .7px);background-size:22px 22px}
+.app{min-height:100vh;display:flex;flex-direction:column}
+.topbar{
+  position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:12px max(16px,calc((100vw - 1100px)/2));background:rgba(8,11,22,.72);
+  backdrop-filter:blur(18px);border-bottom:1px solid var(--border)
+}
+.brand{font-weight:900;letter-spacing:-.5px}.brand span{color:var(--accent2)}
+.actions{display:flex;gap:8px}
+.icon-btn,
+.icon-btn:hover,
+
+.progress{height:3px;background:rgba(255,255,255,.07)}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent2),var(--accent));transition:.35s}
+main{width:min(980px,100%);margin:auto;padding:28px 16px 120px;flex:1}
+.page{display:none;animation:enter .45s ease both}.page.active{display:block}
+@keyframes enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero{
+  min-height:calc(100vh - 170px);display:grid;place-items:center;text-align:center;padding:35px 0;
+}
+.hero-card{
+  width:min(780px,100%);padding:42px 24px;border:1px solid var(--border);border-radius:32px;
+  background:linear-gradient(145deg,rgba(25,184,107,.15),rgba(255,255,255,.045));
+  box-shadow:var(--shadow);position:relative;overflow:hidden
+}
+.hero-card:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(101,230,161,.12);filter:blur(35px);left:-60px;bottom:-80px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:rgba(255,255,255,.07);color:#d8d4ff;font-size:.85rem}
+h1{font-size:clamp(3rem,10vw,6.6rem);line-height:.95;margin:24px 0 16px;letter-spacing:-4px}
+.gradient{background:linear-gradient(110deg,#fff 15%,#b9ffd6 55%,#65e6a1);-webkit-background-clip:text;background-clip:text;color:transparent}
+.subtitle{font-size:clamp(1rem,3vw,1.3rem);color:var(--muted);max-width:650px;margin:0 auto;line-height:2}
+.meta{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:26px 0}
+.pill{padding:9px 13px;border:1px solid var(--border);border-radius:999px;color:#dfe4f4;background:rgba(255,255,255,.045);font-size:.88rem}
+.quote-mini{margin:30px auto 0;max-width:620px;color:#d6d9e8;line-height:2;font-style:italic}
+.section-title{font-size:clamp(1.8rem,5vw,3rem);margin:10px 0 8px;letter-spacing:-1.2px}
+.lead{color:var(--muted);line-height:2;font-size:1.03rem;margin-top:0}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:26px;padding:24px;margin:18px 0;box-shadow:var(--shadow)
+}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.feature{padding:20px;border:1px solid var(--border);border-radius:20px;background:rgba(255,255,255,.035)}
+.feature .num{font-size:.8rem;color:var(--accent2);font-weight:800}.feature h3{margin:8px 0 5px;font-size:1.08rem}.feature p{margin:0;color:var(--muted);line-height:1.9}
+.timeline{position:relative;margin:24px 0}.timeline:before{content:"";position:absolute;right:12px;top:5px;bottom:5px;width:2px;background:linear-gradient(var(--accent),var(--accent2))}
+.step{position:relative;padding:0 42px 22px 0}.dot{position:absolute;right:5px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 5px rgba(101,230,161,.12)}
+.step h3{margin:0 0 4px}.step p{margin:0;color:var(--muted);line-height:1.9}
+.quote{
+  position:relative;padding:28px 24px 28px 24px;border-radius:26px;
+  background:linear-gradient(135deg,rgba(25,184,107,.15),rgba(101,230,161,.08));
+  border:1px solid rgba(139,124,255,.22);line-height:2.25;font-size:1.02rem
+}
+.quote:before{content:"“";position:absolute;top:-15px;right:18px;font:900 5rem/1 Georgia;color:rgba(25,184,107,.35)}
+.quote small{display:block;margin-top:15px;color:var(--muted);font-style:normal}
+.tags{display:flex;flex-wrap:wrap;gap:9px}.tag{padding:8px 12px;border-radius:12px;background:rgba(255,255,255,.06);color:#dfe3f0}
+.bottom{
+  position:fixed;bottom:0;left:0;right:0;z-index:20;padding:12px max(16px,calc((100vw - 1100px)/2));
+  background:rgba(8,11,22,.82);backdrop-filter:blur(18px);border-top:1px solid var(--border)
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:980px;margin:auto}
+.nav button{
+  flex:1;max-width:190px;padding:13px 15px;border-radius:16px;border:1px solid var(--border);
+  background:rgba(255,255,255,.06);color:var(--text);font-family:inherit;font-weight:800;cursor:pointer
+}
+.nav button.primary{background:linear-gradient(135deg,var(--accent),#087f5b);border:0}
+.nav button:disabled{opacity:.35;cursor:not-allowed}.counter{color:var(--muted);font-size:.88rem;white-space:nowrap}
+.toast{position:fixed;left:50%;bottom:88px;transform:translate(-50%,15px);opacity:0;pointer-events:none;padding:10px 15px;border-radius:13px;background:#171d32;border:1px solid var(--border);transition:.25s;z-index:50;font-size:.88rem}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:650px){
+  .topbar{padding:10px 12px}.brand{font-size:.92rem}
+  main{padding:18px 12px 112px}.hero-card{padding:35px 18px;border-radius:25px}
+  h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}.card{padding:19px;border-radius:21px}
+  .nav button{padding:12px 9px;font-size:.9rem}.counter{font-size:.78rem}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Creative thematic visuals */
+.hero-card{isolation:isolate}
+.hero-card:before{content:"✦  ☾  ✦  📖  ✦";position:absolute;inset:12px;display:flex;align-items:flex-start;justify-content:space-between;color:rgba(255,255,255,.18);font-size:1rem;letter-spacing:7px;pointer-events:none}
+.book-mark{width:74px;height:96px;margin:0 auto 18px;position:relative;display:grid;place-items:center;border:1px solid rgba(255,255,255,.16);border-radius:12px 12px 18px 18px;background:linear-gradient(145deg,#123326,#071b13);box-shadow:0 18px 35px rgba(0,0,0,.25);font-size:2.15rem;transform:rotate(-3deg)}
+.book-mark:before,.book-mark:after{content:"";position:absolute;top:9px;bottom:9px;width:1px;background:rgba(255,255,255,.1)}
+.book-mark:before{right:12px}.book-mark:after{left:12px}.book-mark span{position:absolute;bottom:-12px;right:10px;width:25px;height:25px;border-radius:0 0 8px 8px;background:var(--accent2);opacity:.85}
+.symbol-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px 0}
+.symbol{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;border:1px solid var(--border);background:rgba(255,255,255,.05);font-size:1.3rem;transition:.25s}
+.symbol:hover{transform:translateY(-4px) rotate(2deg)}
+.section-kicker{display:flex;align-items:center;gap:9px;color:var(--accent2);font-size:.83rem;font-weight:800;margin-bottom:5px}
+.section-kicker:before{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--accent2),transparent)}
+.feature{position:relative;overflow:hidden}.feature:after{content:"";position:absolute;left:-20px;bottom:-35px;width:90px;height:90px;border-radius:50%;background:var(--glow);filter:blur(24px);opacity:.55}
+.feature .symbol-big{font-size:1.65rem;position:absolute;left:17px;top:17px;opacity:.78}.feature h3{padding-left:35px}
+.dot{position:absolute;right:0;top:0;width:27px;height:27px;border-radius:50%;background:rgba(101,230,161,.12);border:1px solid rgba(101,230,161,.3);box-shadow:0 0 0 5px rgba(101,230,161,.06);display:grid;place-items:center;font-size:.72rem}
+.step:hover{transform:translateX(-4px)}
+.page.active .card,.page.active .feature{animation:cardIn .55s ease both}
+@keyframes cardIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">معرفی <span>صبح واقعه</span></div>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" title="تغییر حالت">◐</button>
+    </div>
+  </header>
+  <div class="progress"><i id="progress"></i></div>
+
+  <main id="pages">
+    <section class="page active">
+      <div class="hero">
+        <div class="hero-card">
+          <div class="book-mark">📖<span></span></div><div class="eyebrow">✦ یک زندگی‌نامه‌ی داستانی ✦</div>
+          <h1 class="gradient">صبح واقعه</h1>
+          <p class="subtitle">روایتی از مسیر ساخته‌شدن شخصیت شهید محسن حججی؛ از نوجوانی، کتاب و فعالیت فرهنگی تا ایثار و شهادت.</p>
+          <div class="symbol-row"><div class="symbol">📖</div><div class="symbol">🔎</div><div class="symbol">🕌</div><div class="symbol">🏠</div><div class="symbol">🕊️</div></div><div class="meta">
+            <span class="pill">✍️ ابراهیم حسن‌بیگی</span>
+            <span class="pill">🏷️ انتشارات خط مقدم</span>
+            <span class="pill">📚 حدود ۱۳۶ صفحه</span>
+          </div>
+          <p class="quote-mini">«بیش از آنکه درباره پایان یک زندگی باشد، درباره مسیری است که یک انسان را می‌سازد.»</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-kicker">📚 آشنایی با اثر</div><h2 class="section-title">کتاب درباره چیست؟</h2>
+      <p class="lead">«صبح واقعه» برخلاف آثاری که تنها بر اسارت و شهادت شهید حججی تمرکز می‌کنند، به ریشه‌های شکل‌گیری شخصیت او می‌پردازد.</p>
+      <div class="card">
+        <h3>یک پرسش کلیدی</h3>
+        <p class="lead">چه عواملی از یک نوجوان معمولی، انسانی با آن روحیه استقامت و ایمان ساخت؟</p>
+        <p style="line-height:2;color:#d9dceb">داستان از دوران نوجوانی محسن آغاز می‌شود؛ از مسجد و هیئت، کتاب‌خواندن و فعالیت‌های فرهنگی و جهادی، دوستی‌ها و خانواده، عشق و ازدواج، تولد فرزند و سرانجام تصمیم برای حضور در سوریه و دفاع از حرم.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-kicker">🧭 از نوجوانی تا شهادت</div><h2 class="section-title">مسیر یک شخصیت</h2>
+      <p class="lead">روایت کتاب، زندگی را مجموعه‌ای از انتخاب‌ها و تجربه‌ها نشان می‌دهد؛ تجربه‌هایی که به‌تدریج شخصیت انسان را شکل می‌دهند.</p>
+      <div class="timeline">
+        <div class="step"><span class="dot">🕌</span><h3>نوجوانی</h3><p>آشنایی با مسجد، هیئت، کتاب و تجربه‌های نخست فرهنگی.</p></div>
+        <div class="step"><span class="dot">📚</span><h3>رشد و خودسازی</h3><p>دوستی‌ها، مطالعه، فعالیت‌های فرهنگی و جهادی و تلاش برای بهترشدن.</p></div>
+        <div class="step"><span class="dot">🏠</span><h3>خانواده</h3><p>عشق، ازدواج و تولد فرزند؛ وجهی انسانی و نزدیک از زندگی شهید.</p></div>
+        <div class="step"><span class="dot">🕊️</span><h3>انتخاب بزرگ</h3><p>حضور در سوریه و دفاع از حرم؛ نقطه‌ای در امتداد همان مسیر طولانی.</p></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-kicker">✨ آنچه کتاب را متفاوت می‌کند</div><h2 class="section-title">ویژگی‌های کتاب</h2>
+      <div class="grid">
+        <div class="feature"><div class="feature"><div class="symbol-big">🎬</div><h3>روایت داستانی</h3><p>به‌جای گزارش خشک تاریخی، زندگی با زبان داستانی و جذاب روایت می‌شود.</p></div>
+        <div class="feature"><div class="feature"><div class="symbol-big">🌱</div><h3>نثر روان</h3><p>زبانی ساده و قابل‌ارتباط برای نوجوانان و بزرگسالان.</p></div>
+        <div class="feature"><div class="feature"><div class="symbol-big">🧭</div><h3>تمرکز بر شخصیت</h3><p>محور اصلی، فرایند شکل‌گیری شخصیت است؛ نه فقط لحظه شهادت.</p></div>
+        <div class="feature"><div class="feature"><div class="symbol-big">❤️</div><h3>زندگی چندوجهی</h3><p>خانواده، فرهنگ، جهاد، باورها، دوستی‌ها و دغدغه‌های شخصی در کنار هم دیده می‌شوند.</p></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-kicker">💡 چرا این روایت ارزش خواندن دارد؟</div><h2 class="section-title">چرا خواندنش مهم است؟</h2>
+      <div class="card">
+        <h3>🌱 ریشه‌های شخصیت</h3>
+        <p class="lead">کتاب نشان می‌دهد شخصیت شهید حججی حاصل سال‌ها تربیت، مطالعه، فعالیت فرهنگی و جهادی بوده است؛ نه نتیجه یک تصمیم ناگهانی.</p>
+      </div>
+      <div class="card">
+        <h3>🚀 الگویی برای نسل جوان</h3>
+        <p class="lead">خواننده با نوجوانی روبه‌رو می‌شود که در مسیر رشد، مسئولیت‌پذیری، ایمان و تلاش را تجربه می‌کند.</p>
+      </div>
+      <div class="card">
+        <h3>❤️ روایتی انسانی</h3>
+        <p class="lead">در کنار جنبه‌های حماسی، احساسات، خانواده، دوستی‌ها و دغدغه‌های شخصی نیز به روایت نزدیک‌تر می‌شوند.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-kicker">🎯 مخاطب‌های کتاب</div><h2 class="section-title">برای چه کسانی؟</h2>
+      <p class="lead">اگر یکی از این گروه‌ها هستی، «صبح واقعه» می‌تواند انتخاب جالبی برایت باشد:</p>
+      <div class="card">
+        <div class="tags">
+          <span class="tag">نوجوانان و جوانان</span><span class="tag">علاقه‌مندان زندگی‌نامه شهدا</span>
+          <span class="tag">ادبیات مقاومت</span><span class="tag">زندگی‌نامه‌های داستانی</span>
+          <span class="tag">علاقه‌مندان رمان</span><span class="tag">شناخت ابعاد کمتر دیده‌شده زندگی شهید حججی</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>✨ حرف آخر</h3>
+        <p style="line-height:2;color:#d9dceb">«صبح واقعه» بیش از آنکه کتابی درباره پایان زندگی شهید حججی باشد، کتابی درباره <strong>مسیر ساخته‌شدن شخصیت او</strong> است؛ مسیری که از خانواده، مسجد، کتاب، کار فرهنگی و خدمت به مردم آغاز می‌شود و به ایثار و شهادت می‌رسد.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-kicker">📝 چند خط از روایت</div><h2 class="section-title">برشی از کتاب</h2>
+      <div class="quote">
+        «بعد از آن، از هنرستان که می‌آمدم، ناهارم را هولکی می‌خوردم و می‌رفتم کتابخانه. توی آن ساعت روز، همه‌جا خلوت بود؛ اما کتابخانه، شلوغ و پر از کتاب؛ کتاب‌هایی که جان می‌داد بنشینی و بخوانی‌شان. راستش توی کتابخانه، حال خوبی داشتم؛ حال آدمی با یک عالمه رفیق شفیق. عکس بزرگی از شهید کاظمی داخل کتابخانه بود که وقتی می‌دیدمش، حس خوبی بهم دست می‌داد؛ حسی که می‌گفت: محسن، بخون. کتاب بخون. تو هم می‌تونی. می‌تونی مثل همین حاج‌احمد، آدم خوبی بشی. بنده‌ی ناز خدا بشی و دیگه گناه نکنی.»
+        <small>— برشی از «صبح واقعه»</small>
+      </div>
+      <div class="card">
+        <p class="lead">این برش، علاقه شهید حججی به مطالعه، خودسازی و الگوپذیری از شهدا را به تصویر می‌کشد؛ ویژگی‌هایی مانند کتاب‌دوستی، خداجویی، تلاش برای ترک گناه و کمال‌طلبی.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="hero" style="min-height:calc(100vh - 260px)">
+        <div class="hero-card">
+          <div class="eyebrow">پایان معرفی</div>
+          <h2 class="section-title" style="font-size:clamp(2rem,7vw,4rem);margin-top:22px">یک مسیر، یک انسان، یک واقعه</h2>
+          <p class="subtitle">گاهی برای فهم یک پایان، باید از سال‌ها قبل شروع کرد.</p>
+          <div class="meta"><span class="pill">صبح واقعه</span><span class="pill">ابراهیم حسن‌بیگی</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom">
+    <div class="nav">
+      <button id="prev" onclick="prevPage()">→ قبلی</button>
+      <div class="counter" id="counter">۱ / ۸</div>
+      <button id="next" class="primary" onclick="nextPage()">بعدی ←</button>
+    </div>
+  </footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const pages=[...document.querySelectorAll('.page')];
+let current=0;
+const faDigits=n=>String(n).replace(/\d/g,d=>"۰۱۲۳۴۵۶۷۸۹"[d]);
+function render(){
+  pages.forEach((p,i)=>p.classList.toggle('active',i===current));
+  document.getElementById('counter').textContent=faDigits(current+1)+" / "+faDigits(pages.length);
+  document.getElementById('progress').style.width=((current+1)/pages.length*100)+"%";
+  document.getElementById('prev').disabled=current===0;
+  document.getElementById('next').disabled=current===pages.length-1;
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function nextPage(){if(current<pages.length-1){current++;render()}}
+function prevPage(){if(current>0){current--;render()}}
+document.addEventListener('keydown',e=>{
+  if(e.key==="ArrowRight") prevPage();
+  if(e.key==="ArrowLeft") nextPage();
+});
+let touchX=0;
+document.addEventListener('touchstart',e=>touchX=e.changedTouches[0].screenX,{passive:true});
+document.addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].screenX-touchX;
+  if(Math.abs(dx)>60) dx>0?prevPage():nextPage();
+},{passive:true});function showToast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),1800)}
+document.getElementById('themeBtn').addEventListener('click',()=>{
+  const light=document.body.classList.toggle('light');
+  if(light){
+    document.documentElement.style.setProperty('--bg','#f4f6fb');
+    document.documentElement.style.setProperty('--card','rgba(255,255,255,.86)');
+    document.documentElement.style.setProperty('--text','#111526');
+    document.documentElement.style.setProperty('--muted','#5f667a');
+    document.documentElement.style.setProperty('--border','rgba(20,25,45,.10)');
+    document.body.style.background='linear-gradient(145deg,#eef1ff,#f8fbff)';
+  }else{
+    document.documentElement.style.setProperty('--bg','#080b16');
+    document.documentElement.style.setProperty('--card','rgba(19,25,45,.78)');
+    document.documentElement.style.setProperty('--text','#f8f9ff');
+    document.documentElement.style.setProperty('--muted','#b8bfd4');
+    document.documentElement.style.setProperty('--border','rgba(255,255,255,.10)');
+    document.body.style.background='radial-gradient(circle at 15% 15%,rgba(25,184,107,.18),transparent 30%),radial-gradient(circle at 85% 85%,rgba(101,230,161,.12),transparent 28%),linear-gradient(145deg,#06110d,#0b2118 55%,#06110d)';
+  }
+});
+render();
+</script>
+</body>
+</html>
